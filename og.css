@@ -1,0 +1,10 @@
+/*
+  Copyright 2016-present, Oculus VR, LLC.
+  All rights reserved.
+*/
+html {
+    user-select: none;
+}
+body {
+    margin: 0;
+}
