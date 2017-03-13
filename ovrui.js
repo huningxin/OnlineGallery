@@ -4,6 +4,8 @@
 (function (exports) {
 'use strict';
 
+var vrDisplay;
+
 var THREE = window && window.THREE || window.THREE;
 
 if (!THREE) {
@@ -2196,7 +2198,9 @@ GuiSys.prototype = Object.assign(Object.create(Object.prototype), {
   },
 
   getHitInput: function getHitInput() {
-    var hitType = !this.isVRPresenting && this.mouseOffset ? GuiSysHitType.MOUSE : GuiSysHitType.GAZE;
+    // Current OpenVR backend doesn't fire vrdisplayactive and vrdisplaydeactive events.
+    // Check the global vrDisplay directly.
+    var hitType = !(vrDisplay && vrDisplay.isPresenting) && this.mouseOffset ? GuiSysHitType.MOUSE : GuiSysHitType.GAZE;
     return {
       hitOffset: hitType === GuiSysHitType.MOUSE ? this.mouseOffset : new THREE.Vector2(0, 0),
       hitType: hitType
@@ -3506,6 +3510,7 @@ var Player = function () {
       navigator.getVRDisplays().then(function (displays) {
         if (displays.length) {
           _this.vrDisplay = displays[0];
+          vrDisplay = _this.vrDisplay;
           _this.controls.setVRDisplay(_this.vrDisplay);
           _this.effect = new VREffect(_this.glRenderer, _this.vrDisplay);
           _this.effect.setSize(width, height);
