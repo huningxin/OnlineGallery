@@ -537,7 +537,7 @@ player.glRenderer.setClearColor(activeTheme.defaultClearColor)
 var scene = new THREE.Scene();
 var guiSys = new OVRUI.GuiSys(scene, {
   cursorEnabled: true,
-  cursorAutoHide: false,
+  cursorAutoHide: true,
 });
 
 // Handle gamepad input for activation
