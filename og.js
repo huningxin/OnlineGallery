@@ -244,6 +244,18 @@ function initScene(player, scene, guiSys) {
         }
       ],
     },
+    {
+      title: "Advanced VR",
+      showRefreshButton: false,
+      initialRotation: Math.PI,
+      samples: [
+    	{
+    	  text: "WebVR Sample",
+    	  description: "WebVR Sample by Brandon Jones",
+    	  url: "https://webvr.info/samples/03-vr-presentation.html"
+    	}
+      ],
+    },
   ];
 
   // We allow for a 2x4 grid, but we reserve the bottom system UX meaning
