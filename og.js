@@ -540,15 +540,18 @@ var guiSys = new OVRUI.GuiSys(scene, {
   cursorAutoHide: true,
 });
 
+const VIVE_TRIGGER_BUTTON_ID = 1;
+
 // Handle gamepad input for activation
 guiSys.eventDispatcher.addEventListener("GuiSysEvent", function (evt) {
   if (evt.eventType === OVRUI.GuiSysEventType.INPUT_EVENT) {
     if (evt.args.inputEvent.type === "GamepadInputEvent") {
       let buttonId = evt.args.inputEvent.buttonId;
       let uiView = evt.args.target;
+      console.log('buttonId: ' + buttonId);
       if (uiView && uiView.isInteractable) {
-        // Activate using A
-        if (buttonId === 0 && uiView.command) {
+        // Use vive trigger button
+        if (buttonId === 1 && uiView.command) {
           uiView.command();
         }
       }
