@@ -579,18 +579,20 @@ var guiSys = new OVRUI.GuiSys(scene, {
   cursorAutoHide: true,
 });
 
-const VIVE_TRIGGER_BUTTON_ID = 1;
-
 // Handle gamepad input for activation
 guiSys.eventDispatcher.addEventListener("GuiSysEvent", function (evt) {
   if (evt.eventType === OVRUI.GuiSysEventType.INPUT_EVENT) {
     if (evt.args.inputEvent.type === "GamepadInputEvent") {
       let buttonId = evt.args.inputEvent.buttonId;
+      let id = evt.args.inputEvent.id;
       let uiView = evt.args.target;
-      console.log('buttonId: ' + buttonId);
+      console.log('id: ' + id + ' button: ' + buttonId);
       if (uiView && uiView.isInteractable) {
-        // Use vive trigger button
-        if (buttonId === 1 && uiView.command) {
+        if (id.includes('Oculus Remote') && buttonId === 0 && uiView.command) {
+          // Use oculus remote selection button to enter
+          uiView.command();
+        } else if (id.includes('OpenVR') && buttonId === 1 && uiView.command) {
+          // Use vive trigger button to enter
           uiView.command();
         }
       }

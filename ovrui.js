@@ -1515,14 +1515,15 @@ var GamepadInputs = function () {
 
   createClass(GamepadInputs, [{
     key: 'generateInputEvent',
-    value: function generateInputEvent(keyEventType, gamepadId, buttonId, repeat) {
+    value: function generateInputEvent(keyEventType, gamepadId, buttonId, repeat, id) {
       return {
         type: this.inputEventType,
         gamepadId: gamepadId,
         mapping: this._gamepadStates[gamepadId].mapping,
         buttonId: buttonId,
         repeat: repeat,
-        keyEventType: keyEventType
+        keyEventType: keyEventType,
+        id: id
       };
     }
   }, {
@@ -1535,7 +1536,7 @@ var GamepadInputs = function () {
     }
   }, {
     key: 'updateButtonStates',
-    value: function updateButtonStates(gamepadId, buttonId, nativeButtonState) {
+    value: function updateButtonStates(gamepadId, buttonId, nativeButtonState, id) {
       var currentTime = Date.now();
       if (this._gamepadStates[gamepadId].buttonStates[buttonId] === undefined) {
         this._gamepadStates[gamepadId].buttonStates[buttonId] = {
@@ -1549,9 +1550,9 @@ var GamepadInputs = function () {
 
       if (buttonState.buttonHeld !== buttonHeld) {
         if (buttonHeld) {
-          this.eventDispatcher.dispatchEvent(this.generateInputEvent(KeyEventType.KEY_EVENT_DOWN, gamepadId, buttonId, false));
+          this.eventDispatcher.dispatchEvent(this.generateInputEvent(KeyEventType.KEY_EVENT_DOWN, gamepadId, buttonId, false, id));
         } else {
-          this.eventDispatcher.dispatchEvent(this.generateInputEvent(KeyEventType.KEY_EVENT_UP, gamepadId, buttonId, false));
+          this.eventDispatcher.dispatchEvent(this.generateInputEvent(KeyEventType.KEY_EVENT_UP, gamepadId, buttonId, false, id));
         }
 
         buttonState.buttonHeld = buttonHeld;
@@ -1576,7 +1577,7 @@ var GamepadInputs = function () {
             };
           }
           for (var j = 0; j < gamepad.buttons.length; ++j) {
-            this.updateButtonStates(i, j, gamepad.buttons[j]);
+            this.updateButtonStates(i, j, gamepad.buttons[j], gamepad.id);
           }
         }
       }
