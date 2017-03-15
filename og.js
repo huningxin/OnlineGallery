@@ -245,16 +245,43 @@ function initScene(player, scene, guiSys) {
       ],
     },
     {
-      title: "Advanced VR",
+      title: "A-Frame",
       showRefreshButton: false,
-      initialRotation: Math.PI,
+      initialRotation: Math.PI * 0.8,
       samples: [
     	{
-    	  text: "WebVR Sample",
-    	  description: "WebVR Sample by Brandon Jones",
-    	  url: "https://webvr.info/samples/03-vr-presentation.html"
+    	  text: "A-Painter",
+    	  description: "Paint in VR in your browser!",
+    	  url: "aframe/a-painter/index.html"
+    	},
+    	{
+    	  text: "A-Blast",
+    	  description: "A WebVR FPS mini-game using A-Frame",
+    	  url: "aframe/a-blast/index.html"
+    	},
+    	{
+    	  text: "A-Video-Gallery",
+    	  description: "A 360 degree video gallery",
+    	  url: "http://powerbuilder.sh.intel.com/nhu/projects/webvr/samples/360-video-gallery/index.html"
     	}
       ],
+    },
+    {
+      title: "WebVR Samples",
+      showRefreshButton: false,
+      initialRotation: -Math.PI * 0.8,
+      samples: [
+      	{
+      	  text: "VR Input",
+      	  description: "VR input sample by Brandon Jones",
+      	  url: "webvr-samples/01-vr-input.html"
+      	},
+      	{
+      	  text: "VR Presentation",
+      	  description: "VR presentation sample by Brandon Jones",
+      	  url: "webvr-samples/03-vr-presentation.html"
+      	}
+      ], 
     },
   ];
 
@@ -266,7 +293,7 @@ function initScene(player, scene, guiSys) {
   const zOffset = -3.5;
 
   // These are the panel sizes. Quite wide but narrow top to bottom. Good for text.
-  const panelWidth = 2.0;
+  const panelWidth = 2.3;
   const panelHeight = 0.5;
 
   // These are half width offsets so that we can center our panel.
