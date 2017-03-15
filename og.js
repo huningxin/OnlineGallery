@@ -170,22 +170,22 @@ function initScene(player, scene, guiSys) {
       samples: [
         {
           text: "Hello WebVR",
-          url: "../WebVRSamples/HelloWebVR/index.html",
+          url: "Carmel-Starter-Kit/HelloWebVR/index.html",
           description: "Intro to the basics of WebVR",
         },
         {
           text: "Gamepad",
-          url: "../WebVRSamples/Gamepad/index.html",
+          url: "Carmel-Starter-Kit/Gamepad/index.html",
           description: "Gear VR Touchpad as a Gamepad",
         },
         {
           text: "360 Photos",
-          url: "../WebVRSamples/Pano/index.html",
+          url: "Carmel-Starter-Kit/Pano/index.html",
           description: "Displaying 360 Photos",
         },
         {
           text: "VR Navigation",
-          url: "../WebVRSamples/Navigation/index.html",
+          url: "Carmel-Starter-Kit/Navigation/index.html",
           description: "HTML 5 Navigation in VR!",
         },
       ],
