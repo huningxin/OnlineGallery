@@ -1,0 +1,3 @@
+[submodule "Carmel-Starter-Kit"]
+	path = Carmel-Starter-Kit
+	url = https://github.com/huningxin/Carmel-Starter-Kit.git
