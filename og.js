@@ -164,34 +164,61 @@ function initScene(player, scene, guiSys) {
   // Panel based UX
   const panelSets = [
     {
-      title: "Starter Kit",
+      title: "Basic Samples",
       showRefreshButton: true,
-      initialRotation: Math.PI * 0.8,
+      initialRotation: 0,
       samples: [
         {
-          text: "Hello WebVR",
-          url: "Carmel-Starter-Kit/HelloWebVR/index.html",
-          description: "Intro to the basics of WebVR",
+          text: "VR Presentation",
+          description: "by Brandon Jones",
+          url: "webvr.info/samples/03-vr-presentation.html"
         },
         {
-          text: "Gamepad",
-          url: "Carmel-Starter-Kit/Gamepad/index.html",
-          description: "Gear VR Touchpad as a Gamepad",
+          text: "Room Scale",
+          description: "by Brandon Jones",
+          url: "webvr.info/samples/05-room-scale.html"
         },
         {
-          text: "360 Photos",
-          url: "Carmel-Starter-Kit/Pano/index.html",
-          description: "Displaying 360 Photos",
+          text: "360 Panorama",
+          description: "by Brandon Jones",
+          url: "webvr.info/samples/XX-360-panorama.html"
         },
         {
-          text: "VR Navigation",
-          url: "Carmel-Starter-Kit/Navigation/index.html",
-          description: "HTML 5 Navigation in VR!",
+          text: "VR Controllers",
+          description: "by Brandon Jones",
+          url: "webvr.info/samples/XX-vr-controllers.html"
+        }
+      ], 
+    },
+    {
+      title: "A-Frame",
+      showRefreshButton: false,
+      initialRotation: -Math.PI * 0.4,
+      samples: [
+        {
+          text: "A-Painter",
+          description: "Paint in VR in your browser",
+          url: "aframevr/a-painter/index.html"
         },
+        {
+          text: "A-Blast",
+          description: "A WebVR FPS mini-game",
+          url: "aframevr/a-blast/index.html"
+        },
+        {
+          text: "City Builder",
+          description: "Build a VR city scene",
+          url: "aframevr/aframe-city-builder/index.html"
+        },
+        {
+          text: "Meseum",
+          description: "WebVR demo that displays art",
+          url: "aframevr/thehallaframe/index.html"
+        }
       ],
     },
     {
-      title: "React VR",
+      title: "React VR (TBD)",
       showRefreshButton: false,
       initialRotation: Math.PI * 0.4,
       samples: [
@@ -218,76 +245,32 @@ function initScene(player, scene, guiSys) {
       ],
     },
     {
-      title: "Tech Demos",
+      title: "Starter Kit",
       showRefreshButton: false,
-      initialRotation: -Math.PI * 0.4,
+      initialRotation: Math.PI * 0.8,
       samples: [
         {
-          text: "Konfigurator",
-          description: "By: Sindre (Breach VR)",
-          url: "http://vizor.io/sindre/configurator?start_mode=3"
+          text: "Hello WebVR",
+          url: "Carmel-Starter-Kit/HelloWebVR/index.html",
+          description: "Intro to the basics of WebVR",
         },
         {
-          text: "In Infinity",
-          description: "By: Yayoi Kusama / Vizor",
-          url: "http://vizor.io/fthr/yayoi-kusama-in-infinity?start_mode=3"
+          text: "Gamepad",
+          url: "Carmel-Starter-Kit/Gamepad/index.html",
+          description: "Gear VR Touchpad as a Gamepad",
         },
         {
-          text: "Tea Room",
-          description: "By: PlayCanvas",
-          url: "https://playcanv.as/p/VNTAx5Eu/"
+          text: "360 Photos",
+          url: "Carmel-Starter-Kit/Pano/index.html",
+          description: "Displaying 360 Photos",
         },
         {
-          text: "Sketchfab",
-          description: "By: Sketchfab",
-          url: "https://sketchfab.com/vr-browser?carmel=1&query=%7B%22collection%22%3A%221ebffd9adaa74ca498a0d5f05d8b8072%22%7D#4df0f3a261a64195b4d74cb3f830dac1"
-        }
+          text: "VR Navigation",
+          url: "Carmel-Starter-Kit/Navigation/index.html",
+          description: "HTML 5 Navigation in VR!",
+        },
       ],
-    },
-    {
-      title: "A-Frame",
-      showRefreshButton: false,
-      initialRotation: 0,
-      samples: [
-      	{
-      	  text: "A-Painter",
-      	  description: "Paint in VR in your browser",
-      	  url: "aframevr/a-painter/index.html"
-      	},
-      	{
-      	  text: "A-Blast",
-      	  description: "A WebVR FPS mini-game",
-      	  url: "aframevr/a-blast/index.html"
-      	},
-        {
-          text: "City Builder",
-          description: "Build a VR city scene",
-          url: "aframevr/aframe-city-builder/index.html"
-        },
-        {
-          text: "Meseum",
-          description: "WebVR demo that displays art",
-          url: "aframevr/thehallaframe/index.html"
-        }
-      ],
-    },
-    {
-      title: "WebVR Samples",
-      showRefreshButton: false,
-      initialRotation: -Math.PI * 0.8,
-      samples: [
-      	{
-      	  text: "VR Input",
-      	  description: "VR input sample by Brandon Jones",
-      	  url: "webvr-samples/01-vr-input.html"
-      	},
-      	{
-      	  text: "VR Presentation",
-      	  description: "VR presentation sample by Brandon Jones",
-      	  url: "webvr-samples/03-vr-presentation.html"
-      	}
-      ], 
-    },
+    }
   ];
 
   // We allow for a 2x4 grid, but we reserve the bottom system UX meaning
