@@ -166,7 +166,7 @@ function initScene(player, scene, guiSys) {
     {
       title: "Starter Kit",
       showRefreshButton: true,
-      initialRotation: 0,
+      initialRotation: Math.PI * 0.8,
       samples: [
         {
           text: "Hello WebVR",
@@ -247,23 +247,28 @@ function initScene(player, scene, guiSys) {
     {
       title: "A-Frame",
       showRefreshButton: false,
-      initialRotation: Math.PI * 0.8,
+      initialRotation: 0,
       samples: [
-    	{
-    	  text: "A-Painter",
-    	  description: "Paint in VR in your browser!",
-    	  url: "aframe/a-painter/index.html"
-    	},
-    	{
-    	  text: "A-Blast",
-    	  description: "A WebVR FPS mini-game using A-Frame",
-    	  url: "aframe/a-blast/index.html"
-    	},
-    	{
-    	  text: "A-Video-Gallery",
-    	  description: "A 360 degree video gallery",
-    	  url: "http://powerbuilder.sh.intel.com/nhu/projects/webvr/samples/360-video-gallery/index.html"
-    	}
+      	{
+      	  text: "A-Painter",
+      	  description: "Paint in VR in your browser",
+      	  url: "aframevr/a-painter/index.html"
+      	},
+      	{
+      	  text: "A-Blast",
+      	  description: "A WebVR FPS mini-game",
+      	  url: "aframevr/a-blast/index.html"
+      	},
+        {
+          text: "City Builder",
+          description: "Build a VR city scene",
+          url: "aframevr/aframe-city-builder/index.html"
+        },
+        {
+          text: "Meseum",
+          description: "WebVR demo that displays art",
+          url: "aframevr/thehallaframe/index.html"
+        }
       ],
     },
     {
