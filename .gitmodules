@@ -1,3 +1,6 @@
 [submodule "Carmel-Starter-Kit"]
 	path = Carmel-Starter-Kit
 	url = https://github.com/huningxin/Carmel-Starter-Kit.git
+[submodule "webvr.info"]
+	path = webvr.info
+	url = https://github.com/huningxin/webvr.info.git
