@@ -196,8 +196,18 @@ function initScene(player, scene, guiSys) {
       initialRotation: -Math.PI * 0.4,
       samples: [
         {
+          text: "360 Video Gallery",
+          description: "View 360 video in VR in browser",
+          url: "aframevr/360-video-gallery/index.html"
+        },
+        {
+          text: "360 Image Gallery",
+          description: "View 360 image in VR in browser",
+          url: "aframevr/360-image-gallery/index.html"
+        },
+        {
           text: "A-Painter",
-          description: "Paint in VR in your browser",
+          description: "Paint in VR in browser",
           url: "aframevr/a-painter/index.html"
         },
         {
