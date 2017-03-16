@@ -4,3 +4,6 @@
 [submodule "webvr.info"]
 	path = webvr.info
 	url = https://github.com/huningxin/webvr.info.git
+[submodule "aframevr/360-image-gallery"]
+	path = aframevr/360-image-gallery
+	url = https://github.com/huningxin/360-image-gallery.git
