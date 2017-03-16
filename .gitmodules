@@ -7,3 +7,6 @@
 [submodule "aframevr/360-image-gallery"]
 	path = aframevr/360-image-gallery
 	url = https://github.com/huningxin/360-image-gallery.git
+[submodule "aframevr/360-video-gallery"]
+	path = aframevr/360-video-gallery
+	url = https://github.com/huningxin/360-video-gallery.git
