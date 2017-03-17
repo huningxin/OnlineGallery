@@ -13,3 +13,6 @@
 [submodule "aframevr/a-blast"]
 	path = aframevr/a-blast
 	url = https://github.com/huningxin/a-blast.git
+[submodule "aframevr/a-painter"]
+	path = aframevr/a-painter
+	url = https://github.com/huningxin/a-painter.git
