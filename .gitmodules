@@ -19,6 +19,6 @@
 [submodule "aframevr/aframe-city-builder"]
 	path = aframevr/aframe-city-builder
 	url = https://github.com/huningxin/aframe-city-builder.git
-[submodule "aframe/thehallaframe"]
-	path = aframe/thehallaframe
+[submodule "aframevr\\thehallaframe"]
+	path = aframevr\\thehallaframe
 	url = https://github.com/huningxin/thehallaframe.git
