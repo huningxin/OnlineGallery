@@ -16,3 +16,6 @@
 [submodule "aframevr/a-painter"]
 	path = aframevr/a-painter
 	url = https://github.com/huningxin/a-painter.git
+[submodule "aframevr/aframe-city-builder"]
+	path = aframevr/aframe-city-builder
+	url = https://github.com/huningxin/aframe-city-builder.git
