@@ -22,3 +22,6 @@
 [submodule "aframevr/thehallaframe"]
 	path = aframevr/thehallaframe
 	url = https://github.com/huningxin/thehallaframe.git
+[submodule "reactvr/React_VR_Prerelease"]
+	path = reactvr/React_VR_Prerelease
+	url = https://github.com/huningxin/React_VR_Prerelease.git
