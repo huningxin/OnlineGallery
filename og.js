@@ -174,9 +174,9 @@ function initScene(player, scene, guiSys) {
           url: "webvr.info/samples/03-vr-presentation.html"
         },
         {
-          text: "Room Scale",
+          text: "VR Audio",
           description: "by Brandon Jones",
-          url: "webvr.info/samples/05-room-scale.html"
+          url: "webvr.info/samples/06-vr-audio.html"
         },
         {
           text: "360 Panorama",
