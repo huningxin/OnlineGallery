@@ -254,7 +254,7 @@ function initScene(player, scene, guiSys) {
         },
       ],
     },
-    {
+    /*{
       title: "Starter Kit",
       showRefreshButton: false,
       initialRotation: Math.PI * 0.8,
@@ -280,7 +280,7 @@ function initScene(player, scene, guiSys) {
           description: "HTML 5 Navigation in VR!",
         },
       ],
-    }
+    }*/
   ];
 
   // We allow for a 2x4 grid, but we reserve the bottom system UX meaning
