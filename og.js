@@ -228,28 +228,28 @@ function initScene(player, scene, guiSys) {
       ],
     },
     {
-      title: "React VR (TBD)",
+      title: "React VR",
       showRefreshButton: false,
       initialRotation: Math.PI * 0.4,
       samples: [
         {
           text: "Hotel Tour",
-          url: "https://s3.amazonaws.com/static.oculus.com/carmel/TourSample/index.html",
+          url: "reactvr/React_VR_Prerelease/dist/TourSample/index.html",
           description: "A beautiful virtual hotel tour!",
         },
         {
           text: "Cube Geometry",
-          url: "https://s3.amazonaws.com/static.oculus.com/carmel/CubeSample/index.html",
+          url: "reactvr/React_VR_Prerelease/dist/CubeSample/index.html",
           description: "Use and Change Cube Geometry!",
         },
         {
           text: "Flexbox Layout",
-          url: "https://s3.amazonaws.com/static.oculus.com/carmel/LayoutSample/index.html",
+          url: "reactvr/React_VR_Prerelease/dist/LayoutSample/index.html",
           description: "Layout UI Panels using Flexbox!",
         },
         {
           text: "Mesh Import",
-          url: "https://s3.amazonaws.com/static.oculus.com/carmel/MeshSample/index.html",
+          url: "reactvr/React_VR_Prerelease/dist/MeshSample/index.html",
           description: "Combine UI Panels and Meshes!",
         },
       ],
