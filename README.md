@@ -1,4 +1,4 @@
-# WebVR Online Gallery
+# WebVR Gallery
 
 Git clone this repo, enter the source folder, execute:
 
