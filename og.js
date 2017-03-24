@@ -628,6 +628,9 @@ let frame = initScene(player, scene, guiSys);
 // Apply our theme dynamically rather than as part of scene init so we can change this on the fly.
 applyTheme(activeTheme, scene, player);
 
+// Resize to window size.
+setTimeout(player.resize(window.innerWidth, window.innerHeight), 500);
+
 var render = function() {
   player.requestAnimationFrame(render);
   player.frame();
