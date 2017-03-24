@@ -153,7 +153,8 @@ function initScene(player, scene, guiSys) {
 
   // Apply our rotation/scale, set our left eye layer value and then attach to the scene for later.
   panoLeftObject.applyMatrix(finalMatrix);
-  panoLeftObject.layers.set(1);
+  // Disable layer to let mirror (camera) to see background texture
+  //panoLeftObject.layers.set(1);
   scene.leftEyeEnvironmentObject = panoLeftObject;
 
   // Apply our rotation/scale, set our right eye layer value and then attach to the scene for later.
