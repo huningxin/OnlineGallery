@@ -3286,25 +3286,18 @@ var Overlay = function () {
       this.supportMessage = message;
 
       var text = document.createElement('div');
-      text.appendChild(document.createTextNode('Get the full VR experience with Gear VR or Oculus Rift'));
+      text.appendChild(document.createTextNode('Get the full WebVR experience with HTC Vive or Oculus Rift'));
       message.appendChild(text);
 
       var actions = document.createElement('div');
       setStyles(actions, SUPPORT_ACTIONS_STYLES);
 
-      var learnMore = document.createElement('a');
-      setStyles(learnMore, SUPPORT_LEARN_MORE_STYLES);
-      learnMore.href = 'https://oculus.com';
-      learnMore.target = '_blank';
-      learnMore.appendChild(document.createTextNode('Learn More'));
-
       var cancel = document.createElement('a');
       setStyles(cancel, SUPPORT_CANCEL_STYLES);
-      cancel.appendChild(document.createTextNode('Cancel'));
+      cancel.appendChild(document.createTextNode('OK'));
       cancel.addEventListener('click', function () {
         _this.hideSupportMessage();
       });
-      actions.appendChild(learnMore);
       actions.appendChild(cancel);
       message.appendChild(actions);
       this.domElement.appendChild(this.supportMessage);
