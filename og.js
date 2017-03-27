@@ -172,7 +172,7 @@ function initScene(player, scene, guiSys) {
         {
           text: "VR Presentation",
           description: "by Brandon Jones",
-          url: "webvr.info/samples/03-vr-presentation.html"
+          url: "webvr.info/samples/04-simple-mirroring.html"
         },
         {
           text: "VR Audio",
