@@ -593,6 +593,9 @@ guiSys.eventDispatcher.addEventListener("GuiSysEvent", function (evt) {
         } else if (id.includes('OpenVR') && buttonId === 1 && uiView.command) {
           // Use vive trigger button to enter
           uiView.command();
+        } else if (id.includes('Oculus Touch') && (buttonId === 3 || buttonId === 1) && uiView.command) {
+          // Use oculus touch button A or index trigger to enter.
+          uiView.command();
         }
       }
     }
