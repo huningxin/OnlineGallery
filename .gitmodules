@@ -25,3 +25,6 @@
 [submodule "reactvr/React_VR_Prerelease"]
 	path = reactvr/React_VR_Prerelease
 	url = https://github.com/huningxin/React_VR_Prerelease.git
+[submodule "reactvr/react-vr"]
+	path = reactvr/react-vr
+	url = https://github.com/huningxin/react-vr.git
