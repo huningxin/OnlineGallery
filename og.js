@@ -235,23 +235,33 @@ function initScene(player, scene, guiSys) {
       samples: [
         {
           text: "Hotel Tour",
-          url: "reactvr/React_VR_Prerelease/dist/TourSample/index.html",
+          url: "reactvr/react-vr/dist/TourSample/index.html",
           description: "A beautiful virtual hotel tour!",
         },
         {
-          text: "Cube Geometry",
-          url: "reactvr/React_VR_Prerelease/dist/CubeSample/index.html",
-          description: "Use and Change Cube Geometry!",
+          text: "Cylindrical Panel",
+          url: "reactvr/react-vr/dist/CylindricalPanel/index.html",
+          description: "Show a cylindrical panel!",
         },
         {
           text: "Flexbox Layout",
-          url: "reactvr/React_VR_Prerelease/dist/LayoutSample/index.html",
+          url: "reactvr/react-vr/dist/LayoutSample/index.html",
           description: "Layout UI Panels using Flexbox!",
         },
         {
           text: "Mesh Import",
-          url: "reactvr/React_VR_Prerelease/dist/MeshSample/index.html",
+          url: "reactvr/react-vr/dist/ModelSample/index.html",
           description: "Combine UI Panels and Meshes!",
+        },
+        {
+          text: "Video Scene",
+          url: "reactvr/react-vr/dist/VideoSample/index.html",
+          description: "Watching Video in a cinema!",
+        },
+        {
+          text: "360 Video",
+          url: "reactvr/react-vr/dist/VideoSample360/index.html",
+          description: "Watching 360 video in HMD!",
         },
       ],
     },
